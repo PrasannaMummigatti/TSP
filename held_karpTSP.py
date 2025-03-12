@@ -60,13 +60,16 @@ def animate_tsp_path(coords, path):
     
     plt.ion()
     ax.set_title("Held–Karp algorithm TSP")
-    
+    plt.text(0.01, 0.01, 'PrasannaMummigtti',bbox=dict(facecolor='lightgray', alpha=0.5))  # Plot cities
+    plt.show()
+
+    plt.pause(10)
     for i in range(len(path) - 1):
         x_start, y_start = coords[path[i]]
         x_end, y_end = coords[path[i + 1]]
         
         num_steps = 5
-        plt.text(0.01, 0.01, 'PrasannaMummigtti',bbox=dict(facecolor='blue', alpha=0.5))  # Plot cities
+        
         for t in np.linspace(0, 1, num_steps):
             x_interp = x_start + t * (x_end - x_start)
             y_interp = y_start + t * (y_end - y_start)
