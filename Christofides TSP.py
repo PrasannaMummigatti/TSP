@@ -101,7 +101,7 @@ def animate_christofides(num_nodes=10):
     def update(frame):
         title, edges, color = steps[frame]
         plot_graph(ax, G, nodes, edges=edges, title=title, highlight_edges=edges, highlight_color=color)
-    plt.text(0.0, 0.0, 'PrasannaMummigtti',bbox=dict(facecolor='lightgray', alpha=0.5))
+    plt.text(0.0, 0.0, 'PrasannaMummigatti',bbox=dict(facecolor='lightgray', alpha=0.5))
     ani = FuncAnimation(fig, update, frames=len(steps), interval=1500, repeat=True)
     plt.show()
 

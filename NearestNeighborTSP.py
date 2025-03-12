@@ -49,7 +49,7 @@ def animate(i):
     plt.cla()
     plt.plot(points[:, 0], points[:, 1], 'bo', label='Cities')  # Plot cities
     plt.plot(path[:i+1, 0], path[:i+1, 1], 'r-', marker='o')  # Plot tour path
-    plt.text(0.65, 0.015, 'PrasannaMummigtti',bbox=dict(facecolor='gray', alpha=0.5))  # Plot cities
+    plt.text(0.65, 0.015, 'PrasannaMummigatti',bbox=dict(facecolor='gray', alpha=0.5))  # Plot cities
     plt.title('Nearest Neighbour TSP')
     plt.legend()
 

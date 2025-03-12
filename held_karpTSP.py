@@ -60,7 +60,7 @@ def animate_tsp_path(coords, path):
     
     plt.ion()
     ax.set_title("Held–Karp algorithm TSP")
-    plt.text(0.01, 0.01, 'PrasannaMummigtti',bbox=dict(facecolor='lightgray', alpha=0.5))  # Plot cities
+    plt.text(0.01, 0.01, 'PrasannaMummigatti',bbox=dict(facecolor='lightgray', alpha=0.5))  # Plot cities
     plt.show()
 
     plt.pause(10)
